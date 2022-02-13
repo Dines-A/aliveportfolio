@@ -1,0 +1,340 @@
+/***** Basic Pulgins *****/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+
+::selection {
+    background: rgba(255, 230, 0, 0.548);
+  }
+
+body {
+    background-color: rgb(0, 0, 0) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/***** End Basic Pulgins *****/
+
+.height-100 {
+    height: 100vh;
+}
+
+.NameSize 
+{
+    font-size: 10vw;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .NameSize
+    {
+        margin-top: 60%;
+    }
+  }
+
+.Myname {
+    text-decoration: none;
+    background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-out;
+   }
+   
+.Myname:hover {
+    background-position: -100%;
+   }
+
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  /***** about *****/
+.info
+{
+    text-transform: lowercase;
+    writing-mode:  vertical-rl;
+    color: white;
+}
+.Degreeclg a
+{
+    color: #232323;
+    text-decoration: none;
+}
+.Degreeclg a:hover
+{
+ color: black;
+}
+.bgc
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(219, 157, 75) !important;
+    border-radius: 10px;
+}
+.bgimg
+{
+    border-radius: 10px !important;
+}
+.aboutme
+{
+    color: black;
+}
+@media only screen and (max-width: 770px) {
+    .info
+    {
+        writing-mode: horizontal-tb;
+        color: white;
+    }
+  }
+  /***** End about *****/
+
+/***** skill *****/
+
+.skill
+{
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.skillcol
+{
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #a5a5a5;
+    margin-top:1rem ;
+    margin-bottom:1rem ;
+}
+/***** End skill *****/
+
+/***** activities *****/
+.activities
+{
+display: flex;
+justify-content: center;
+flex-flow: column;
+}
+.activities .box
+{
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    margin: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(39, 39, 39);
+}
+.activities .box:hover
+{
+    background-color: rgb(37, 37, 37);
+    border-radius: 9px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.imgsize
+{
+    width: 7rem;
+    height: 7rem;
+}
+.imgsizespark
+{
+    width: 4.5rem;
+    height: 4.5rem; 
+}
+.project
+{
+    background-color: rgb(37, 37, 37) !important;
+}
+
+/***** TimeLine *****/
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+}
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date {
+        width: 100px;
+    }
+}
+.single-timeline-area .timeline-date::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ffffff;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    border: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+.single-timeline-area .single-timeline-content .timeline-icon {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 30px;
+    height: 30px;
+    background-color: #f1c40f;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.single-timeline-area .single-timeline-content .timeline-icon i {
+    color: #ffffff;
+    line-height: 30px;
+}
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-icon,
+.single-timeline-area .single-timeline-content:focus .timeline-icon {
+    background-color: #020710;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+    color: #f7d200;
+}
+.single-timeline-area p
+{
+    text-transform: capitalize;
+}
+.single-timeline-area p:hover
+{
+    color: white;
+}
+/***** End TimeLine *****/
+/***** End activities *****/
+
+/***** contact *****/
+.contact
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.contact a 
+{
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover
+{
+    color: #ffc107 !important;
+    transition: 0.5s !important;
+}
+.fa-phone, .fa-envelope, .fa-street-view,.fa-github,
+.fa-linkedin-in,.fa-instagram
+{
+    color: #ffc107;
+}
+.contact label
+{
+    color: whitesmoke;
+}
+.socialmedia a i:hover
+{
+    color: white;
+    transition: 0.5s;
+}
+
+/***** End contact *****/
+/***** Footer *****/
+.footer a
+{
+    color: white;
+}
+.footer a:hover
+{
+    transition: 0.5s;
+    color: #ffc107;
+}
+/***** End Footer *****/
